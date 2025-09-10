@@ -1,0 +1,20 @@
+#program to count total vowels and consonants in a string
+
+def voco_count(str):
+    vcount=0
+    ccount=0
+    ocount=0
+    v_l=['a','e','i','o','u','A','E','I','O','U']
+    for i in str:
+        if(i.isalpha()):
+            if i in v_l:
+                vcount+=1
+            else:
+                ccount+=1
+        else:
+            ocount+=1
+    print(f"Total no of vowels : {vcount}")
+    print(f"Total no of consonants : {ccount}")
+
+str=input("Enter string : ")
+voco_count(str)
