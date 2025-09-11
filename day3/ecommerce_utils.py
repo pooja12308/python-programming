@@ -27,7 +27,7 @@ def add_gst(price,gst_percent=18):
     return new_price
 
 def generate_invoice(cart,discount_percent=10,gst_percent=18):
-    print("\t----- INVOICE -----")
+    print("----- INVOICE -----")
     for item in cart:
         print(f"\t{item} : {cart[item]}")
     print("\t----------")
@@ -39,4 +39,3 @@ def generate_invoice(cart,discount_percent=10,gst_percent=18):
     print(f"\tAfter 18% GST : {gstprice}")
     print("\t----------")
     print("Thankyou for shopping with us!")
-    
